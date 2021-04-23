@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>P-149 Side Table Model</title>
+    <meta name="description" content="P-149 Side Table Model" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-a-assets>
+        <a-asset-item id="table" src="./Side Table Model.glb"></a-asset-item>
+      </a-a-assets>
+      <a-entity shadow="receive:true;">
+        <a-entity
+          scale="0.05 0.05 0.05"
+          gltf-model="#table"
+          position="0 0 0"
+          rotation="0 0 0"
+        ></a-entity>
+
+      <a-camera position="0 5 10">
+      </a-camera>
+      <a-entity light="type: ambient;"> </a-entity>
+    </a-scene>
+  </body>
+</html>
